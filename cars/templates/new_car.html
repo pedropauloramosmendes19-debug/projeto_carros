@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form method="post" enctype="multipart/form-data">
+        <table>{{ form.as_table }}</table>
+
+        <input type="submit" value="Cadastrar">
+
+
+
+        {% csrf_token %}
+
+    </form>
+
+{% endblock %}

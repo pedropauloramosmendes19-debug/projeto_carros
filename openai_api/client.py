@@ -1,10 +1,11 @@
 from openai import OpenAI
 import os
 
-client = OpenAI()
+
 
 
 def get_car_ai_bio(model, brand, year):
+    client = OpenAI()
     message = ''''
     Me mostre uma descrição de venda para o carro {} {} {} em apenas 250 caracteres. Fale coisas específicas desse modelo.
     Descreva especificações técnicas desse modelo de carro.

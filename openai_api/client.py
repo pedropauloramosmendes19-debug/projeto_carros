@@ -1,6 +1,6 @@
 from openai import OpenAI
-import os
-API_KEY = os.environ.get("OPENAI_API_KEY")
+from decouple import config
+API_KEY = config("OPENAI_API_KEY")
 client = OpenAI()
 
 

@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 import os
 from pathlib import Path
-from decouple import config, Csv, RepositoryEnv, Config
+from decouple import config,RepositoryEnv, Config
 
 from django.conf.global_settings import MEDIA_ROOT
 
@@ -33,6 +33,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = ['*']
 
+OPENAI_API_KEY = config("OPENAI_API_KEY")
 
 # Application definition
 

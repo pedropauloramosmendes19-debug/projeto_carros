@@ -18,8 +18,8 @@ from django.conf.global_settings import MEDIA_ROOT
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-REPOSITORY = RepositoryEnv(BASE_DIR/ '.env')
-config = Config(REPOSITORY)
+DOTENV_PATH = BASE_DIR / '.env'
+config = Config(RepositoryEnv(DOTENV_PATH))
 
 
 # Quick-start development settings - unsuitable for production
@@ -33,7 +33,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-OPENAI_API_KEY = config("OPENAI_API_KEY")
+
 
 # Application definition
 

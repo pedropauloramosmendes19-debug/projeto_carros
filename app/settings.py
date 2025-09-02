@@ -144,7 +144,7 @@ MEDIA_URL = "/media/"
 
 # Diga ao Django onde procurar pelos arquivos estáticos
 STATICFILES_DIRS = [
-    BASE_DIR / "cars" / "static", 'fonts'
+    BASE_DIR / 'cars' / 'static'/ 'fonts'
 ]
 
 

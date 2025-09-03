@@ -142,7 +142,7 @@ MEDIA_URL = "/media/"
 
 
 
-# Diga ao Django onde procurar pelos arquivos estáticos
+
 
 
 
